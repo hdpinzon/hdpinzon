@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Iguana Tech. Site</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <style>
+      #carouselBasicExample,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item-active
+      {
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      
+    .carousel-item:nth-child(1) {
+      background-image: url('img/Meeting.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url('img/Coursesjpg.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url('img/Clients.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    } 
+    </style>
+  </head>
+  <body>
+    <header class="mb-5">
+      <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+              data-mdb-collapse-init
+              class="navbar-toggler"
+              type="button"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Navbar brand -->
+              <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img
+                  src="img/LogoIguanaP.png"
+                  height="45"
+                  alt="Iguana Logo"
+                  loading="lazy">
+              </a>
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+              </ul>
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+          
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            
+              <!-- Notifications -->
+              <div class="dropdown">
+                <a
+                  data-mdb-dropdown-init
+                  class="text-reset me-3 dropdown-toggle hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Some news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Avatar -->
+              <div class="dropdown">
+                <a
+                  data-mdb-dropdown-init
+                  class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuAvatar"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuAvatar"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">My profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Right elements -->
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Carousel wrapper -->
+        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+        <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <div class="mask" style="background-color: hsla(134, 32%, 36%, 0.6)">
+                <div class="d-flex justify-content-center  align-items-center h-100">
+                  <div class="text-center text-white">
+                    <h1 class="mb-4">Iguana Tech.</h1>
+                    <h2 class="mb-a">Your Strategic Ally</h2>
+                    <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-init data-mdb-ripple-color="lifht">Click Here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Single item -->
+            <div class="carousel-item">
+              <div class="mask" style="background-color: hsla(265, 32%, 36%, 0.6)">
+                <div class="d-flex justify-content-center  align-items-center h-100">
+                  <div class="text-center text-white">
+                    <h1 class="mb-4">Iguana Tech.</h1>
+                    <h2 class="mb-a">Services</h2>
+                    <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-init data-mdb-ripple-color="lifht"><a href="#services">Click Here</a></button>
+                  </div>
+                </div>
+              </div> 
+              
+            </div>
+          
+            <!-- Single item -->
+            <div class="carousel-item">
+              <div class="mask" style="background-color: hsla(0, 32%, 36%, 0.6)">
+                <div class="d-flex justify-content-center  align-items-center h-100">
+                  <div class="text-center text-white">
+                    <h1 class="mb-4">Iguana Tech.</h1>
+                    <h2 class="mb-a">Courses</h2>
+                    <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-init data-mdb-ripple-color="lifht"><a href="#courses">Click Here</a></button>
+                  </div>
+                </div>
+              
+              </div>
+          </div>
+        </div>
+
+        
+          <!-- Inner -->
+        
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Carousel wrapper -->
+    </header>
+    <main>
+      <div class="container">
+        <h4 id="services" class="mb-4 text-center">Services Section</h4>
+        <div class="row">
+          <div class="col-md-7 mb-4">
+            <div
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-mdb-ripple-init
+              data-mdb-ripple-color="light"
+            >
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" alt="Louvre">
+              <a href="#!">
+                <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h1>Technology Infraestructure</h1>
+            <p>ITech have an experimented team of ingeneers for manage your infraestructure. Leave in our hands your technology issues, configurations and users services.</p>
+            <p><strong>We believe hatd work let us comply our agreements.</strong></p>
+          </div>
+        </div>
+        <hr class="my-5">
+        <h4 id="courses" class="mb-4 text-center">Course Section</h4>
+        <div class="row gx-lg-5">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/course1.jpg" class="img-fluid" alt="Courso One">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Coure One</h5>
+                <p class="card-text">Our course One aimed at technical staff is one of the most popular among people.</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/course2.jpg" class="img-fluid" alt="Course Two">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Course Two</h5>
+                <p class="card-text">Course two oriented to people with little experience in the technological sector.</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/course3.jpg" class="img-fluid" alt="Course Three">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Course Three</h5>
+                <p class="card-text">In this course you will know about the most advanced  AI techniques.</p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<footer id="footer" class="bg-body-tertiary text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <form action="#">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-auto mb-4 mb-md-0">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12 mb-4 mb-md-0">
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="form5Example22" class="form-control">
+            <label class="form-label" for="form5Example22">Email address</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto mb-4 mb-md-0">
+          <!-- Submit button -->
+          <button data-mdb-ripple-init type="button" class="btn btn-primary mb-4 btn btn-secondary">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">IguanaTech</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    <script src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script></script>
+  </body>
+</html>
